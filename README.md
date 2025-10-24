@@ -39,61 +39,33 @@ ai-landing-page-builder/
 
 ### Prerequisites
 
-- Docker and Docker Compose
+- Python 3.8+
+- MongoDB
 - OpenAI API access
-- MongoDB Atlas account (or local MongoDB)
 
-### Installation with Docker (Recommended)
+### Installation
 
 1. **Clone the repository**
 ```bash
    git clone
-   cd ai-dlp-backend
+   cd ai-landing-page-builder
 ```
 
-2. **Configure environment variables**
-   
-   Create a `.env` file in the project root:
-```env
-   OPENAI_API_KEY=your_api_key
-   MONGODB_URI=mongodb+srv://your_connection_string
-   ENVIRONMENT=development
-```
-
-3. **Build and run with Docker Compose**
+2. **Set up the backend**
 ```bash
-   docker-compose up --build
-```
-
-   The API will be available at `http://localhost:8000`
-
-4. **Access API documentation**
-```bash
-   http://localhost:8000/docs
-```
-
-5. **Stop the containers**
-```bash
-   docker-compose down
-```
-
-6. **View logs**
-```bash
-   docker-compose logs -f
-```
-
-### Local Development (without Docker)
-
-**Note:** For local development, we recommend using Docker. If you prefer to run without Docker:
-
-1. **Install Python 3.13+**
-
-2. **Install dependencies**
-```bash
+   cd backend
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
    pip install -r requirements.txt
 ```
 
-3. **Create a `.env` file** with your environment variables
+3. **Configure environment variables**
+   
+   Create a `.env` file in the `backend/` directory:
+```env
+   OPENAI_API_KEY=your_api_key
+   MONGODB_URI=mongodb+srv://your_connection_string
+```
 
 4. **Run the backend**
 ```bash
