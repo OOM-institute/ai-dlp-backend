@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Landing Page Builder - Architecture</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px;
+            margin: 0;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .title {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            color: #2d3748;
+            margin-bottom: 40px;
+        }
+        .layer {
+            margin-bottom: 30px;
+            border: 3px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            background: #f7fafc;
+        }
+        .layer-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2d3748;
+            margin-bottom: 15px;
+            padding: 8px 15px;
+            background: linear-gradient(90deg, #4299e1, #667eea);
+            color: white;
+            border-radius: 6px;
+            display: inline-block;
+        }
+        .component-box {
+            background: white;
+            border: 2px solid #cbd5e0;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .component-title {
+            font-weight: bold;
+            font-size: 16px;
+            color: #2d3748;
+            margin-bottom: 8px;
+        }
+        .component-items {
+            font-size: 13px;
+            color: #4a5568;
+            line-height: 1.6;
+            padding-left: 15px;
+        }
+        .component-items li {
+            margin: 4px 0;
+        }
+        .arrow {
+            text-align: center;
+            font-size: 24px;
+            color: #4299e1;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        .row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .col {
+            flex: 1;
+            min-width: 300px;
+        }
+        .frontend { border-left: 5px solid #4299e1; }
+        .backend { border-left: 5px solid #48bb78; }
+        .external { border-left: 5px solid #ed8936; }
+        .database { border-left: 5px solid #9f7aea; }
+        .tech-badge {
+            display: inline-block;
+            background: #edf2f7;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            color: #4a5568;
+            margin: 2px;
+            font-weight: 600;
+        }
+        .flow-section {
+            background: #edf2f7;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .flow-title {
+            font-weight: bold;
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .flow-step {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+            font-size: 14px;
+        }
+        .flow-arrow {
+            color: #4299e1;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">🚀 AI Landing Page Builder - System Architecture</div>
+        
+        <!-- CLIENT LAYER -->
+        <div class="layer">
+            <div class="layer-title">CLIENT LAYER</div>
+            <div class="component-box frontend">
+                <div class="component-title">📱 Next.js Frontend (React + Tailwind)</div>
+                <ul class="component-items">
+                    <li>Input form (industry, offer, audience, tone, url)</li>
+                    <li>Landing page editor with drag & drop</li>
+                    <li>Section components (Hero, Features, Testimonials, FAQ, Contact, Footer)</li>
+                    <li>Real-time preview renderer</li>
+                    <li>Edit/Regenerate section controls</li>
+                </ul>
+                <div style="margin-top: 10px;">
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">Next.js</span>
+                    <span class="tech-badge">Tailwind CSS</span>
+                    <span class="tech-badge">TypeScript</span>
+                </div>
+            </div>
+            <div class="arrow">↓ HTTP/REST (JSON)</div>
+        </div>
+
+        <!-- API LAYER -->
+        <div class="layer">
+            <div class="layer-title">API LAYER</div>
+            <div class="component-box backend">
+                <div class="component-title">⚡ FastAPI Backend (Python)</div>
+                <div style="margin-top: 10px; margin-bottom: 15px;">
+                    <span class="tech-badge">FastAPI</span>
+                    <span class="tech-badge">Python 3.9+</span>
+                    <span class="tech-badge">Pydantic</span>
+                    <span class="tech-badge">Uvicorn</span>
+                </div>
+                <ul class="component-items">
+                    <li><strong>POST</strong> /api/pages/generate - Generate new landing page</li>
+                    <li><strong>GET</strong> /api/pages/{id} - Retrieve page</li>
+                    <li><strong>POST</strong> /api/pages/{id}/edit-section - Manual section edit</li>
+                    <li><strong>POST</strong> /api/pages/{id}/regenerate-section - AI regeneration</li>
+                    <li><strong>POST</strong> /api/pages/{id}/reorder-sections - Drag & drop</li>
+                    <li><strong>POST</strong> /api/pages/{id}/publish - Publish page</li>
+                    <li><strong>DELETE</strong> /api/pages/{id} - Delete page</li>
+                </ul>
+            </div>
+            <div class="arrow">↓</div>
+        </div>
+
+        <!-- EXTERNAL SERVICES & DATA -->
+        <div class="row">
+            <!-- External Services -->
+            <div class="col">
+                <div class="layer">
+                    <div class="layer-title">EXTERNAL SERVICES</div>
+                    
+                    <div class="component-box external">
+                        <div class="component-title">🤖 Azure OpenAI (GPT-4o)</div>
+                        <ul class="component-items">
+                            <li>Generate complete page specifications</li>
+                            <li>Regenerate individual sections</li>
+                            <li>Match brand tone and style</li>
+                            <li>Create compelling copy</li>
+                        </ul>
+                        <div style="margin-top: 10px;">
+                            <span class="tech-badge">GPT-4o</span>
+                            <span class="tech-badge">Azure AI</span>
+                        </div>
+                    </div>
+
+                    <div class="component-box external">
+                        <div class="component-title">🕷️ Web Crawler</div>
+                        <ul class="component-items">
+                            <li>Scrape home page + 2 inner pages</li>
+                            <li>Extract titles, headings, meta descriptions</li>
+                            <li>Parse text content (5000 chars)</li>
+                            <li>Build brand context for LLM</li>
+                        </ul>
+                        <div style="margin-top: 10px;">
+                            <span class="tech-badge">BeautifulSoup4</span>
+                            <span class="tech-badge">Requests</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Layer -->
+            <div class="col">
+                <div class="layer">
+                    <div class="layer-title">DATA LAYER</div>
+                    
+                    <div class="component-box database">
+                        <div class="component-title">🗄️ MongoDB</div>
+                        <div style="margin-top: 10px; margin-bottom: 15px;">
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">PyMongo</span>
+                        </div>
+                        <ul class="component-items">
+                            <li><strong>Collection:</strong> pages</li>
+                            <li style="margin-left: 20px;">• page_id (unique)</li>
+                            <li style="margin-left: 20px;">• version (int)</li>
+                            <li style="margin-left: 20px;">• sections[] (array)</li>
+                            <li style="margin-left: 20px;">• user_context (dict)</li>
+                            <li style="margin-left: 20px;">• crawled_context (string)</li>
+                            <li style="margin-left: 20px;">• published (boolean)</li>
+                            <li style="margin-left: 20px;">• created_at (datetime)</li>
+                            <li style="margin-left: 20px;">• updated_at (datetime)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DATA FLOWS -->
+        <div class="flow-section">
+            <div class="flow-title">📊 Key Data Flows</div>
+            
+            <div style="margin-top: 15px;">
+                <strong style="color: #2d3748;">1. Initial Page Generation:</strong>
+                <div class="flow-step">
+                    <span>User Input</span>
+                    <span class="flow-arrow">→</span>
+                    <span>Backend API</span>
+                    <span class="flow-arrow">→</span>
+                    <span>Crawler (optional)</span>
+                    <span class="flow-arrow">→</span>
+                    <span>LLM Prompt</span>
+                    <span class="flow-arrow">→</span>
+                    <span>Azure OpenAI</span>
+                </div>
+                <div class="flow-step">
+                    <span style="margin-left: 0;">Page Spec JSON</span>
+                    <span class="flow-arrow">→</span>
+                    <span>MongoDB (save)</span>
+                    <span class="flow-arrow">→</span>
+                    <span>Frontend (render)</span>
+                </div>
+            </div>
+
+            <div style="margin-top: 15px;">
+                <strong style="color: #2d3748;">2. Section Regeneration:</strong>
+                <div class="flow-step">
+                    <span>User clicks Regenerate</span>
+                    <span class="flow-arrow">→</span>
+                    <span>Fetch page from MongoDB</span>
+                    <span class="flow-arrow">→</span>
+                    <span>Extract contexts</span>
+                </div>
+                <div class="flow-step">
+                    <span style="margin-left: 0;">Build prompt</span>
+                    <span class="flow-arrow">→</span>
+                    <span>Azure OpenAI</span>
+                    <span class="flow-arrow">→</span>
+                    <span>New section data</span>
+                    <span class="flow-arrow">→</span>
+                    <span>MongoDB (update)</span>
+                </div>
+            </div>
+
+            <div style="margin-top: 15px;">
+                <strong style="color: #2d3748;">3. Manual Edit / Reorder:</strong>
+                <div class="flow-step">
+                    <span>User edits/drags</span>
+                    <span class="flow-arrow">→</span>
+                    <span>Backend API</span>
+                    <span class="flow-arrow">→</span>
+                    <span>MongoDB (update)</span>
+                    <span class="flow-arrow">→</span>
+                    <span>Frontend (re-render)</span>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; color: #718096; font-size: 14px;">
+            <strong>PoC Version</strong> • FastAPI + MongoDB + Azure OpenAI + BeautifulSoup4 • 2025
+        </div>
+    </div>
+</body>
+</html>

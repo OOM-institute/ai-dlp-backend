@@ -1,0 +1,174 @@
+{
+  "_id": {
+    "$oid": "68ef0d5dcf797b074659cd4c"
+  },
+  "page_id": "landing-001",
+  "version": 6,
+  "sections": [
+    {
+      "id": "hero-1",
+      "type": "hero",
+      "order": 0,
+      "data": {
+        "headline": "Step Into Style, Save the Planet",
+        "subheadline": "Discover eco-friendly shoes designed for your vibe and the Earth's health. Look good, feel great, do better!",
+        "ctaText": "Shop Cool Kicks",
+        "backgroundImage": "https://unsplash.com/photos/unpaired-maroon-plimsoll-on-top-of-yellow-textile-a-QH9MAAVNI",
+        "textColor": "#FFFFFF",
+        "backgroundColor": "#1a1a1a"
+      }
+    },
+    {
+      "id": "features-1",
+      "type": "features",
+      "order": 1,
+      "data": {
+        "title": "Step Into Innovation, Every Day",
+        "description": "Revolutionary footwear designed to redefine comfort, sustainability, and individuality for the modern explorer.",
+        "items": [
+          {
+            "id": "f1",
+            "title": "Adaptive Fit System",
+            "description": "Engineered to mold to your unique foot shape, delivering personalized support and effortless ease with every wear.",
+            "icon": "👟"
+          },
+          {
+            "id": "f2",
+            "title": "Eco-Forward Materials",
+            "description": "Built from ethical, sustainable resources to champion a cleaner planet without compromising durability or style.",
+            "icon": "♻️"
+          },
+          {
+            "id": "f3",
+            "title": "Bold Identity Designs",
+            "description": "Eye-catching aesthetics crafted to celebrate your individuality and make every step a statement.",
+            "icon": "🌈"
+          }
+        ]
+      }
+    },
+    {
+      "id": "testimonials-1",
+      "type": "testimonials",
+      "order": 2,
+      "data": {
+        "title": "What Teens Are Saying",
+        "items": [
+          {
+            "id": "t1",
+            "quote": "These shoes are SO comfy and I love that they help the planet too. Everyone at school asks where I got them!",
+            "author": "Jessica Nguyen",
+            "role": "Student",
+            "company": "Evergreen High",
+            "rating": 5
+          },
+          {
+            "id": "t2",
+            "quote": "Finally, shoes that don't just look cool but actually make me feel good about my choices. A+ vibes!",
+            "author": "Liam Parker",
+            "role": "Skater",
+            "company": "Board Bros",
+            "rating": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "faq-1",
+      "type": "faq",
+      "order": 3,
+      "data": {
+        "title": "Frequently Asked Questions",
+        "items": [
+          {
+            "id": "q1",
+            "question": "Are these shoes really eco-friendly?",
+            "answer": "Yup! We use recycled materials and sustainable practices to make every pair planet-approved."
+          },
+          {
+            "id": "q2",
+            "question": "Do they come in my size?",
+            "answer": "Absolutely! We have sizes for everyone, and our size guide makes it super easy to find your fit."
+          },
+          {
+            "id": "q3",
+            "question": "What if I don't like them?",
+            "answer": "No worries! We offer free returns so you can shop stress-free."
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-1",
+      "type": "contact",
+      "order": 4,
+      "data": {
+        "title": "Ready to Rock Your Eco Style?",
+        "description": "Don't wait—your perfect pair is just a click away. Let's do this!",
+        "fields": [
+          {
+            "name": "email",
+            "label": "Email Address",
+            "type": "email",
+            "required": true
+          },
+          {
+            "name": "message",
+            "label": "What's on your mind?",
+            "type": "textarea",
+            "required": true
+          }
+        ],
+        "submitText": "Send It!",
+        "backgroundColor": "#f9fafb"
+      }
+    },
+    {
+      "id": "footer-1",
+      "type": "footer",
+      "order": 5,
+      "data": {
+        "links": [
+          {
+            "label": "Privacy Policy",
+            "url": "/privacy"
+          },
+          {
+            "label": "Terms of Service",
+            "url": "/terms"
+          },
+          {
+            "label": "Contact",
+            "url": "/contact"
+          }
+        ],
+        "socialLinks": [
+          {
+            "platform": "Instagram",
+            "url": "https://instagram.com"
+          },
+          {
+            "platform": "TikTok",
+            "url": "https://tiktok.com"
+          }
+        ],
+        "copyright": "© 2025 eco friendly shoes. All rights reserved."
+      }
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-15T02:56:29.403Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-15T06:51:53.874Z"
+  },
+  "user_id": null,
+  "published": true,
+  "user_context": {
+    "industry": "E-commerce",
+    "offer": "eco friendly shoes",
+    "target_audience": "teenagers",
+    "brand_tone": "playful"
+  },
+  "crawled_context": "=== HOME PAGE ===\nURL: https://www.nike.com/my/\nTitle: Nike. Just Do It. Nike MY\nDescription: Inspiring the world's athletes, Nike delivers innovative products, experiences and services.\nMain Headings: Featured\nContent Preview:\nNike. Just Do It. Nike MY LeBron XXIII 'MIAMI TWICE' Winning an NBA title is hard enough, but collecting back-to-back championships puts a team in elite company. Shop Now Learn More Tatum 4 'St. Louis' NEVER BE THE SAME Same was never the goal, so take your game to the next level. Shop LeBron XXIII 'MIAMI TWICE' Winning an NBA title is hard enough, but collecting back-to-back championships puts a team in elite company. Shop Now Learn More Tatum 4 'St. Louis' NEVER BE THE SAME Same was never the goal, so take your game to the next level. Shop Featured Pegasus Premium Run Powered Shop Max Voltage Turn Up the Voltage Shop All G.T. Cut 3 x LEGO® Collection Layups From Way Up Get Notified Best Sellers Shop Shop Nike x NBA Shop Shop by Sport Basketball Football Running Tennis Golf Skateboarding \n\n=== PAGE 1 ===\nURL: https://www.nike.com/my/w/best-76m50\nTitle: Bestsellers. Nike MY\nDescription: Find Bestsellers at Nike.com. Free delivery and returns on select orders.\nMain Headings: Bestsellers\nContent Preview:\nBestsellers. Nike MY Shoes Tops & T-Shirts Hoodies & Sweatshirts Jackets Trousers & Tights Shorts Sports Bras Bodysuits Compression and Base Layer Tracksuits Skirts & Dresses Socks Accessories & Equipment Gender ( 0 ) Men Women Unisex Kids ( 0 ) Boys Girls Shop By Price ( 0 ) Under RM 200 RM 200 - RM 500 RM 501 - RM 999 Sale & Offers ( 0 ) Sale Colour ( 0 ) Purple Black Red Orange Blue White Brown Green Yellow Multi-Colour Grey Pink Brand ( 0 ) Nike Sportswear Jordan NikeLab ACG + More Nike Pro Nike - Less Sports ( 0 ) Lifestyle Running Training & Gym Basketball + More American Football Football Yoga Baseball Golf Skateboarding Tennis Athletics Walking Outdoor Volleyball Dance Cheerleading Cycling HIIT - Less Best For ( 0 ) Wet Weather Conditions Features ( 0 ) Side vents Reflective Design\n\n=== PAGE 2 ===\nURL: https://www.nike.com/my/w/metcon-shoes-3yxqszy7ok\nTitle: Metcon Shoes. Nike MY\nDescription: Find Metcon Shoes at Nike.com. Free delivery and returns on select orders.\nMain Headings: Metcon Shoes\nContent Preview:\nMetcon Shoes. Nike MY Shoes / Metcon Training & Gym Nike By You Gender ( 0 ) Men Women Unisex Shop By Price ( 0 ) RM 200 - RM 500 RM 501 - RM 999 Sale & Offers ( 0 ) Sale Colour ( 0 ) Black Blue Brown Green Grey Orange Pink Purple Red White Yellow Shoe Height ( 0 ) Low Top Brand ( 0 ) Nike By You Collections ( 1 ) Nike Motiva Nike P-6000 Nike V2K Winflo + More Nike GT Series Foamposite Air Force 1 Air Max Air Rift Blazer Cortez Huarache Internationalist Nike Alphafly Nike Vaporfly Nike Zoom Fly Mercurial Metcon Nike Dunk Nike Free RN Nike Pegasus Presto Nike Structure Sunray Tiempo Nike Vomero Nike Zoom Rival Jordan Editions Nike Infinity Run - Less Width ( 0 ) Regular Sports ( 0 ) Training & Gym Nike Metcon 10 Just In Nike Metcon 10 Men's Workout Shoes 1 Colour RM 689 Nike Metcon 10 Bests"
+}
