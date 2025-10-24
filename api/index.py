@@ -25,6 +25,11 @@ cors_origins = [
     "https://ai-landing-page-frontend.vercel.app",
 ]
 
+# Add frontend URL from environment variable if provided
+frontend_url = os.getenv("FRONTEND_URL")
+if frontend_url:
+    cors_origins.append(frontend_url)
+
 if os.getenv("ENVIRONMENT") == "production":
     cors_origins.extend([
         "https://yourdomain.com",

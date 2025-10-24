@@ -13,8 +13,14 @@ cors_origins = [
     "http://localhost:8000",
     "http://127.0.0.1:3000",
     "http://127.0.0.1:8000",
+    "https://ai-dlp-frontend.vercel.app",
     "https://ai-landing-page-frontend.vercel.app",
 ]
+
+# Add frontend URL from environment variable if provided
+frontend_url = os.getenv("FRONTEND_URL")
+if frontend_url:
+    cors_origins.append(frontend_url)
 
 if os.getenv("ENVIRONMENT") == "production":
     cors_origins = [
